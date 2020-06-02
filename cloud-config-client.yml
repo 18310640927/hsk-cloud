@@ -1,6 +1,6 @@
-﻿spring:
-  profiles:
-    active:
+﻿spring: 
+  profiles: 
+    active: 
       - dev
 
 ---
@@ -10,18 +10,18 @@ spring:
   profiles: dev
   application:
     name: cloud-config-client
-eureka:
-  client:
-    server-url:
+eureka: 
+  client: 
+    server-url: 
       defaultZone: http://127.0.0.1:7001/eureka/
 ---
-server:
+server: 
   port: 8202
-spring:
+spring: 
   profiles: test
-  application:
+  application: 
     name: cloud-config-client
-eureka:
-  client:
-    server-url:
+eureka: 
+  client: 
+    server-url: 
       defaultZone: http://127.0.0.1:7001/eureka/
